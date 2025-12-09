@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Project - Data Visualizations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #16213e;
+            margin-bottom: 20px;
+        }
+
+        .welcome {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+
+        .description {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            color: #2d3748;
+            text-align: left;
+        }
+
+        .description strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.795);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .project-card.alt {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 10px 25px rgba(240, 147, 251, 0.3);
+        }
+
+        .project-card.alt:hover {
+            box-shadow: 0 15px 35px rgba(240, 147, 251, 0.4);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .project-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Term Project Title – Screen Time and Sleep Outcomes</h1>
+        <p class="author">Deborah Odumusi</p>
+        <p class="welcome">Hypothesis: Increased late-night screen exposure reduces sleep quality</p>
+
+        <div class="description">
+            <p>
+                <strong>Plots</strong> Explores the relationship between screen time before bed and sleep quality,
+                with mental well-being as the third variable visualized through color coding. 
+            </p>
+            <br>
+            <p>
+                <strong>Overview of My Scatter Plots</strong> My visualizations showed that increased screentime before bed was generally linked 
+        to lower sleep duration and quality, though some data points deviated from this trend. 
+        I also included variables such as exercise, bedtime routines, sleep start and finish times, 
+        screentime activities, restfulness, mental wellbeing, and their relationships with an 
+        8-hour sleep standard. Using color and bubble size to represent mental wellbeing and 
+        restfulness clarified that nights with higher scores in these areas often had better 
+        sleep outcomes than screentime alone suggested. This indicates that while screentime 
+        impacts sleep, emotional wellbeing and restfulness play key roles, so improving sleep 
+        likely requires attention to both digital habits and overall mental state.
+
+            </p><h2>Key Observations in the Data Collected</h2>
+    <p>
+        In my visualizations, I observed a general decline in sleep duration and sleep quality 
+        as screentime before bed increased, although several points fell outside this pattern. 
+        Adding mental wellbeing and restfulness as color and bubble-size indicators helped explain 
+        these deviations, since nights with higher wellbeing or restfulness sometimes produced 
+        better sleep outcomes than the screentime alone would predict. Overall, the data suggests 
+        that while screentime influences sleep, variations in wellbeing and restfulness also shape 
+        these results, showing that sleep depends on more than one factor.
+    </p>
+
+        </div>
+
+        <div class="projects-grid">
+            <a href="final term project2/index.html" class="project-card">
+                <div class="project-title">Plot 1</div>
+                <div class="project-subtitle">Sleep Quality vs Screen Time </div>
+            </a>
+
+            <a href="Impact of Late-Night Screen Time on Sleep Quality/index.html" class="project-card alt">
+                <div class="project-title">Plot 2</div>
+                <div class="project-subtitle"> Sleep & Screen Time Study</div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
